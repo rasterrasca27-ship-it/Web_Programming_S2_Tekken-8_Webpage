@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TEKKEN 8 Official Website - Fist Meets Fate. Experience the next chapter in the legendary fighting game series.">
+    <title>TEKKEN 8 | Bandai Namco Entertainment America Inc.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- 3D Background Canvas -->
+    <div id="canvas-container" role="presentation" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <a href="#" class="logo" aria-label="TEKKEN 8 Home">TEKKEN 8</a>
+        <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+            ☰
+        </button>
+        <ul class="nav-menu" id="navMenu" role="menubar">
+            <li class="nav-links" role="none"><a href="#story" role="menuitem" onclick="closeMenu()">Story</a></li>
+            <li class="nav-links" role="none"><a href="#modes" role="menuitem" onclick="closeMenu()">Game Modes</a></li>
+            <li class="nav-links" role="none"><a href="#buy" role="menuitem" onclick="closeMenu()">Buy Now</a></li>
+            <li class="nav-links nav-auth" role="none"><a href="auth.html" class="nav-button">Log In</a></li>
+        </ul>
+    </nav>
+
+    <!-- Cover Page -->
+    <section class="cover-page" id="cover-page">
+        <video id="cover-video" autoplay muted loop playsinline class="cover-video" preload="metadata">
+            <source src="YTDown_YouTube_TEKKEN-8-Opening-Movie_Media_fzqvmFrV46c_001_1080p (1).mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Background audio starts after cover page -->
+    <div class="background-audio-container" aria-hidden="true">
+        <audio id="background-audio" loop preloa   d="auto">
+            <source src="YTDown_YouTube_TEKKEN-8-OST-02-Liberation_Media_QZfOJ8zC19k_001_1080p.mp4" type="audio/mp4">
+        </audio>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section class="hero" role="banner" aria-label="Hero section">
+            <div class="hero-content">
+                <a href="https://www.ign.com/articles/tekken-8-review" class="rating-badge" target="_blank" rel="noopener noreferrer" aria-label="IGN Review: 9 out of 10">
+                    <span class="score" aria-hidden="true">9/10</span>
+                    <span aria-hidden="true">IGN</span>
+                </a>
+                <h1>TEKKEN 8</h1>
+                <p class="hero-tagline">Fist Meets Fate</p>
+                <p class="hero-description">The King of Iron Fist Tournament is back and better than ever. See what critics have to say about TEKKEN 8!</p>
+                <a href="https://www.youtube.com/watch?v=2cWB0uUPC78" class="btn-primary" target="_blank" rel="noopener noreferrer">Watch Now</a>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="story-section" id="story" aria-labelledby="story-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="story-heading" class="section-title">Fist Meets Fate</h2>
+                    <p class="section-subtitle">The epic conclusion of the Mishima saga</p>
+                </div>
+                <div class="story-content">
+                    <p>After defeating his father, Heihachi Mishima, Kazuya continues his conquest for global domination, using the forces of G Corporation to wage war on the world.</p>
+                    <p>Jin is forced to face his fate head on as he is reunited with his long lost mother, and seeks to stop his father Kazuya's reign of terror.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Modes Section -->
+        <section class="modes-section" id="modes" aria-labelledby="modes-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="modes-heading" class="section-title">New Game. New Modes.</h2>
+                    <p class="section-subtitle">Get enthralled in Tekken 8 with all new games and mechanics making this Tekken the most robust and exciting Tekken in the series!</p>
+                </div>
+
+                <!-- Arcade Quest -->
+                <article class="mode-card" aria-labelledby="arcade-quest-heading">
+                    <div class="mode-visual" tabindex="0" role="img" aria-label="Arcade Quest mode screenshot showing players at arcade cabinets">
+                        <video src="YTDown_YouTube_Tekken-8-Arcade-Quest-Mode-And-Release-D_Media_RQgIASxHCZM_001_1080p.mp4" alt="Arcade Quest: Players competing at Tekken arcade machines" loading="lazy" width="640" height="360" autoplay muted style="object-fit: contain;"></video>
+                    </div>
+                    <div class="mode-info">
+                        <h3 id="arcade-quest-heading">Arcade Quest</h3>
+                        <p>In the new single-player mode 'Arcade Quest', players can create their own avatar and conquer their rivals in a variety of different arcades. This mode serves as an introduction to the gameplay of TEKKEN 8, allowing players to acquire basic knowledge, learn practical techniques, and enjoy a unique storyline and battles different from regular matches. As the protagonist grows and faces increasingly stronger opponents, so do you!</p>
+                    </div>
+                </article>
+
+                <!-- Tekken Fight Lounge -->
+                <article class="mode-card" aria-labelledby="lounge-heading">
+                    <div class="mode-visual" tabindex="0" role="img" aria-label="Tekken Fight Lounge showing neon lit social space with avatars">
+                        <video autoplay muted loop playsinline loading="lazy" width="640" height="360" style="object-fit: contain; width: 100%; height: auto;">
+                            <source src="YTDown_YouTube_TEKKEN-8-Accolades-Trailer_Media_iWzpH19KJoU_001_1080p.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="mode-info">
+                        <h3 id="lounge-heading">Tekken Fight Lounge</h3>
+                        <p>Enter an immersive lobby where players can interact with one another and access new features and game modes. In the lounge, players can create custom Avatars, communicate with other players via chat and emotes, set up matchmaking, and experience the deep customization and variety of game modes via four distinct areas called Battle Area, Customization Shop, TEKKEN DOJO, and Beach Area.</p>
+                    </div>
+                </article>
+
+                <!-- Super Ghost Battle -->
+                <article class="mode-card" aria-labelledby="ghost-heading">
+                    <div class="mode-visual" tabindex="0" role="img" aria-label="Super Ghost Battle showing Jin Kazama with Ghost Match banner">
+                        <video autoplay muted loop playsinline loading="lazy" width="640" height="360" style="object-fit: contain; width: 100%; height: auto;">
+                            <source src="YTDown_YouTube_Super-Ghost-Battle-is-LEGIT-TEKKEN-8-DEM_Media_vJeqrBTxrmo_001_1080p.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="mode-info">
+                        <h3 id="ghost-heading">Super Ghost Battle Mode</h3>
+                        <p>In the Tekken Fight Lounge, players can go head-to-head with other players ghost data; AI generated NPCs that learn from the player's play data history! Players can play against AI ghosts with real player-like movement that continues to learn player's game play characteristics and habits with ease!</p>
+                    </div>
+                </article>
+
+                <!-- Tekken Ball -->
+                <article class="mode-card" aria-labelledby="ball-heading">
+                    <div class="mode-visual" tabindex="0" role="img" aria-label="Tekken Ball mode showing beach volleyball with Kazuya and Jin">
+                        <video autoplay muted loop playsinline loading="lazy" width="640" height="360" style="object-fit: contain; width: 100%; height: auto;">
+                            <source src="YTDown_YouTube_Tekken-Ball-is-Sweatier-than-Actual-Tekk_Media_Pdjrp9x3sdY_001_1080p.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="mode-info">
+                        <h3 id="ball-heading">Tekken Ball</h3>
+                        <p>First appearing in Tekken 3, the beloved mini game is back and better than ever! In Tekken Ball, epic battles are "fought" on a beach volleyball court!</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Recommended Games Section -->
+        <section class="recommended-games-section" aria-labelledby="recommended-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="recommended-heading" class="section-title">Recommended Games</h2>
+                    <p class="section-subtitle">Explore a popular shooter experience recommended for fans of action-packed multiplayer games.</p>
+                </div>
+                <article class="recommended-card">
+                    <a href="https://playvalorant.com/ar-ae/" class="recommended-link" target="_blank" rel="noopener noreferrer" aria-label="Recommended game Valorant">
+                        <div class="recommended-video-wrap">
+                            <span class="recommended-video-title">VALORANT</span>
+                            <video class="recommended-video" autoplay muted loop playsinline loading="lazy" poster="tekken 8 cover page.jpg">
+                                <source src="YTDown_YouTube_Episode-1-IGNITION-Official-Launch-Gamep_Media_IhhjcB2ZjIM_001_1080p.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="recommended-details">
+                            <p>Visit Valorant's official site for a high-intensity competitive FPS experience.</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" id="buy" aria-labelledby="cta-heading">
+            <h2 id="cta-heading" class="section-title" style="margin-bottom: 30px;">Get Ready for the Next Battle</h2>
+            <div class="cta-actions">
+                <a href="https://tekken.com/purchase" class="btn-primary" target="_blank" rel="noopener noreferrer">Buy Now</a>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews-section" aria-labelledby="reviews-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="reviews-heading" class="section-title">Player Reviews</h2>
+                    <p class="section-subtitle">Hear what our community has to say about TEKKEN 8</p>
+                </div>
+                <div class="reviews-grid">
+                    <article class="review-card">
+                        <blockquote class="review-quote">"TEKKEN 8 brings back the intensity and excitement of the series with stunning graphics and deep gameplay. The story is epic!"</blockquote>
+                        <cite class="review-author">- Alex Johnson, Fighter Enthusiast</cite>
+                        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    </article>
+                    <article class="review-card">
+                        <blockquote class="review-quote">"The new modes like Arcade Quest and Super Ghost Battle are game-changers. Can't stop playing!"</blockquote>
+                        <cite class="review-author">- Maria Garcia, Casual Gamer</cite>
+                        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    </article>
+                    <article class="review-card">
+                        <blockquote class="review-quote">"Bandai Namco nailed it with TEKKEN 8. The character roster and mechanics feel fresh yet familiar."</blockquote>
+                        <cite class="review-author">- David Lee, Pro Player</cite>
+                        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    </article>
+                    <article class="review-card">
+                        <blockquote class="review-quote">"From the opening cinematic to the final boss, TEKKEN 8 is a masterpiece. Highly recommended!"</blockquote>
+                        <cite class="review-author">- Sarah Kim, Game Reviewer</cite>
+                        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-logo" aria-label="TEKKEN 8">TEKKEN 8</div>
+        <nav class="social-links" aria-label="Social media links">
+            <a href="#" aria-label="Facebook"><span aria-hidden="true">📘</span></a>
+            <a href="#" aria-label="Twitter"><span aria-hidden="true">🐦</span></a>
+            <a href="#" aria-label="Instagram"><span aria-hidden="true">📷</span></a>
+            <a href="#" aria-label="YouTube"><span aria-hidden="true">▶️</span></a>
+        </nav>
+        <div class="copyright">
+            <p>&copy; 2024 Bandai Namco Entertainment America Inc. All Rights Reserved.</p>
+            <p>TEKKEN is a registered trademark of Bandai Namco Entertainment Inc.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
